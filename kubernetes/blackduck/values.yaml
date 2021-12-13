@@ -97,6 +97,8 @@ environs:
   RABBITMQ_SSL_FAIL_IF_NO_PEER_CERT: "false"
   RUN_SECRETS_DIR: "/tmp/secrets"
   SCANNER_CONCURRENCY: "1"
+  JAVA_OPTS: "-Dlog4j2.formatMsgNoLookups=true"
+  LS_JAVA_OPTS: "-Dlog4j2.formatMsgNoLookups=true"
 
 postgres:
   # override the docker registry at container level
